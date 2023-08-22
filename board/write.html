@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css" type="text/css" />
+    <!-- CSS 파일 이동 시, 링크 재작업 필요함. -->
+    <script src="/" type="module"></script>
+    <!-- JS 파일 추가 시, 링크 작업 필요함. -->
+  </head>
+  <body>
+    <h2><a href="/">Diet diary</a></h2>
+    <!-- list.html 파일 추가 시, 링크 작업 필요함. -->
+
+    <h2 class="board-title">글 쓰기</h2>
+    <form action="/" id="writeform">
+      <!-- view.html 파일 추가 시, 링크 작업 필요함.-->
+      <ul class="board-write-form">
+        <li>
+          <span>제목</span>
+          <input type="text" name="title" />
+        </li>
+        <li>
+          <span>작성자</span>
+          <input type="text" name="writer" />
+        </li>
+        <li>
+          <span>내용</span>
+          <textarea name="content"></textarea>
+        </li>
+      </ul>
+
+      <button type="submit" class="btn">글 작성</button>
+    </form>
+  </body>
+</html>
