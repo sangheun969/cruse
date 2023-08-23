@@ -7,12 +7,25 @@
     <script type="module" src="../public/js/board/modify.js"></script>
   </head>
   <body>
-    <h1>수정페이지</h1>
-    <ul>
-      <li>수정된 페이지</li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+    <h1><a href="/">Logo</a></h1>
+
+    <h2 class="modify-title">글수정</h2>
+    <form id="modifyform">
+      <ul class="modify-write-form">
+        <li>
+          <span>제목</span>
+          <input type="text" name="title" />
+        </li>
+        <li>
+          <span>작성자</span>
+          <input type="text" name="writer" />
+        </li>
+        <li>
+          <textarea name="content" cols="30" rows="10"></textarea>
+        </li>
+      </ul>
+
+      <button type="submit" class="btn">글수정</button>
+    </form>
   </body>
 </html>
