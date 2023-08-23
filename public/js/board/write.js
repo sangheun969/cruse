@@ -1,4 +1,4 @@
-import BoardRow from "../lib/BoardRow.js";
+import BoardRow from "../lib/boardRow.js";
 
 import Storage from "../lib/storage.js";
 const storage = new Storage();
