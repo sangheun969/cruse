@@ -10,7 +10,7 @@ class Storage {
   storage;
   constructor(StorageName = STORAGE_NAME) {
     this.name = StorageName;
-    this.storage = localStorage.getItem(this.getItem); //String
+    this.storage = localStorage.getItem(this.name); //String
   }
 
   get() {
@@ -44,7 +44,7 @@ class Storage {
   incrementId() {
     const row = this.getLatestItem();
     if (!row) return INITIAL_ID;
-    return row.id + INCREMENT_STEP;
+    return parseInt(row.id) + INCREMENT_STEP;
   }
 
   clear() {
