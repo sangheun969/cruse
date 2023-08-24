@@ -13,33 +13,34 @@
 
   <h1><a href="/">View</a></h1>
 
-  <ul>
+  <form action="./view.html?id=id" id="writeform">
 
-    <li>
-      <span>제목: </span>
-      <span id="title">ㅇ</span>
-    </li>
+    <ul class="board-write-form">
 
-    <li>
-      <span>작성자: </span>
-      <span id="writer">ㅇ</span>
-    </li>
+      <li>
+        <span>제목: </span>
+        <span id="title">ㅇ</span>
+      </li>
 
-    <li id="created-at">00:00</li>
+      <li>
+        <span>작성자: </span>
+        <span id="writer">ㅇ</span>
+      </li>
 
-    <li>
-      <span>내용: </span>
-      <p id="content">ㅇ</p>
-    </li>
+      <li>
+        <span>내용</span>
+        <p id="content">ㅇ</p>
+      </li>
 
-    <li class="buttons">
-      <button id="list"><a href="./list.html">목록</a></button>
-      <button><a id="modify" href="./modify.html">수정</a></button>
-      <button id="delete">삭제</button>
-    </li>
+      <li>
+        <button id="list"><a href="./list.html">목록</a></button>
+        <button><a id="modify" href="./modify.html">수정</a></button>
+        <button id="delete"><span>삭제</span></button>
+      </li>
 
+    </ul>
 
-  </ul>
+  </form>
 
 </body>
 

@@ -10,7 +10,6 @@ try {
 
   // element 가져오기
   const title = document.querySelector("#title")
-  console.log(title)
   const writer = document.querySelector("#writer")
   const content = document.querySelector("#content")
 
