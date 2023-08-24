@@ -9,9 +9,10 @@ try {
   const row = storage.getById(id)
 
   // element 가져오기
-  const title = document.querySelector(".title")
-  const writer = document.querySelector(".writer")
-  const content = document.querySelector(".content")
+  const title = document.querySelector("#title")
+  console.log(title)
+  const writer = document.querySelector("#writer")
+  const content = document.querySelector("#content")
 
   // 내용 채우기
   title.innerHTML = row.title
@@ -19,9 +20,8 @@ try {
   content.innerHTML = row.content
 
   // 삭제 버튼
-  const deleteButton = document.querySelector(".delete-button")
+  const deleteButton = document.querySelector("#delete")
   deleteButton.addEventListener("click", () => {
-    const {id} = getParams()
     storage.delete(id)
     location.href = "./list.html"
   })
