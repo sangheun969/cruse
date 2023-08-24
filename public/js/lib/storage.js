@@ -26,7 +26,7 @@ class Storage {
 
   delete(id) {
     const storage = this.get();
-    const newStorage = storage.filter((row) => row.id !== parseInt(id));
+    const newStorage = storage.filter((row) => row.id != parseInt(id));
     const serialize = JSON.stringify(newStorage);
     localStorage.setItem(this.name, serialize); //데이터 변경
   }
@@ -38,7 +38,7 @@ class Storage {
   }
 
   getById(id) {
-    return this.get().find((row) => row.id === parseInt(id));
+    return this.get().find((row) => row.id == parseInt(id));
   }
 
   incrementId() {
