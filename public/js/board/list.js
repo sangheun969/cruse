@@ -11,7 +11,12 @@ const createRow = (row) => `
   <td>${row.created_at}</td>
   <td>${row.hit}</td>
 </tr>
-`;
+`
+
+const component = list.map(createRow)
+
+const tbody = document.querySelector("tbody")
+tbody.innerHTML = component.join("")
 
 const components = list.map(createRow);
 
