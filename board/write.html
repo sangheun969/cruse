@@ -20,15 +20,18 @@
       <ul class="board-write-form">
         <li>
           <span>제목</span>
-          <input type="text" name="title" />
+          <input type="text" name="title" required/>
         </li>
         <li>
           <span>작성자</span>
-          <input type="text" name="writer" />
+          <input type="text" name="writer" required/>
+          <!-- <input type="text" name="writer" />
+          로그인된 아이디의 정보를 넣어야 될지?
+          modify에도 작성자의 아이디를 넣어야 될지? -->
         </li>
         <li>
           <span>내용</span>
-          <textarea name="content"></textarea>
+          <textarea name="content" required></textarea>
         </li>
       </ul>
 
