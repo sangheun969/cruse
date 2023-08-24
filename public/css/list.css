@@ -6,13 +6,17 @@
 
 h1 {
   text-align: center;
-  color: tomato;
   font-size: 40px;
 }
 
 a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 > a {
+    color: tomato;
   text-decoration: none;
-  color: #333;
 }
 
 ul,
@@ -21,13 +25,13 @@ li {
 }
 
 table {
-  /* border-collapse : collapse; */
-  border: 2px solid black;
+  border: 2px solid black;  
 }
 
 .board-table {
   width: 100%;
   margin-top: 20px;
+  
 }
 
 .board-table > thead {
@@ -39,16 +43,16 @@ table {
   padding: 10px 14px;
 }
 
-.board-table > thead > tr > td {
-  padding: 12px 14px;
-  border-bottom: 1px solid #ddd;
+.board-table > tbody > tr > td {
+  padding: 8px 14px;
+  border-bottom: 2px double #ddd;
   text-align: center;
 }
 
 .btn {
   display: inline-block;
   padding: 7px 14px;
-  background: #efefef;
+  background: #d3d3d3c4;
   border: 2px solid #000;
   margin-top: 10px;
   font-size: 11px;
@@ -61,8 +65,8 @@ table {
 
 #slide img {
   /* border: 10px solid; */
-  width: 800px;
-  height: 500px;
+  width: 600px;
+  height: 400px;
 }
 
 .slide {

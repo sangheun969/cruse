@@ -11,12 +11,12 @@ const createRow = (row) => `
   <td>${row.created_at}</td>
   <td>${row.hit}</td>
 </tr>
-`;
+`
 
-const components = list.map(createRow);
+const component = list.map(createRow)
 
-const tbody = document.querySelector("tbody");
-tbody.innerHTML = components.join("");
+const tbody = document.querySelector("tbody")
+tbody.innerHTML = component.join("")
 
 let slideIndex = 0;
 showSlides();
