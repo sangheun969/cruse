@@ -24,6 +24,17 @@ class Storage {
     localStorage.setItem(this.name, serialize); //데이터 저장
   }
 
+  modify(id, item) {
+    const storage = this.get();
+    storage.forEach((v, index) => {
+      if (v.id == id) {
+        storage[index] = item;
+      }
+    });
+    const serialize = JSON.stringify(storage);
+    localStorage.setItem(this.name, serialize);
+  }
+
   delete(id) {
     const storage = this.get();
     const newStorage = storage.filter((row) => row.id != parseInt(id));

@@ -1,11 +1,17 @@
 import { getParams } from "../lib/utils.js";
 import Storage from "../lib/storage.js";
+import BoardRow from "../lib/boardRow.js";
 
 const storage = new Storage();
 const form = document.querySelector("#modifyform");
+const titleForm = document.querySelector("#title-Form");
+const textareaForm = document.querySelector("#textarea-Form");
 
 const { id } = getParams();
 const row = storage.getById(id);
+
+titleForm.value = row.title;
+textareaForm.value = row.content;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -13,17 +19,17 @@ form.addEventListener("submit", (e) => {
   const title = e.target.title.value;
   const content = e.target.content.value;
 
-  const id = row;
   const dataRow = {
-    // id : row,
+    id: id,
     title: title,
-    // writer : writer,
+    writer: row.writer,
     content: content,
   };
-  // const boardRow = new BoardRow(dataRow);
 
-  // storage.set(내아이디의 로컬 스토리지에 저장);
+  const boardRow = new BoardRow(dataRow);
 
+  storage.modify(id, boardRow);
+  //내아이디의 로컬 스토리지에 저장
   location.href = `/board/view.html?id=${id}`;
 });
 
