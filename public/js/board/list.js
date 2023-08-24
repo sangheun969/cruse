@@ -3,7 +3,7 @@ import Storage from "../lib/storage.js"
 const storage = new Storage()
 const list = storage.get()
 
-const createRow = () => `
+const createRow = (row) => `
 <tr>
   <td>${row.id}</td>
   <td><a href="./view.html?id=${row.id}">${row.title}</a></td>
