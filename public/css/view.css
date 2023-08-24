@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: 0;
 }
+
+h1 a {
+  color: tomato;
+  text-decoration: none;
+  font-size: 3rem;
+}
