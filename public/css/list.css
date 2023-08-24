@@ -1,54 +1,85 @@
 * {
-    margin : 0;
-    padding : 0;
-    box-sizing :0;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
 h1 {
-    text-align: center;
-    color: tomato;
-    font-size: 40px;
+  text-align: center;
+  color: tomato;
+  font-size: 40px;
 }
 
 a {
-    text-decoration : none;
-    color : #333;
+  text-decoration: none;
+  color: #333;
 }
 
-ul, li {
-    list-style : none;
+ul,
+li {
+  list-style: none;
 }
 
 table {
-    /* border-collapse : collapse; */
-    border : 2px solid black;
+  /* border-collapse : collapse; */
+  border: 2px solid black;
 }
 
 .board-table {
-    width : 100%;
-    margin-top : 20px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .board-table > thead {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 .board-table > thead > tr > th {
-    padding : 10px 14px;
+  padding: 10px 14px;
 }
 
 .board-table > thead > tr > td {
-    padding : 12px 14px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
 }
 
 .btn {
-    display: inline-block;
-    padding: 7px 14px;
-    background: #efefef;
-    border: 2px solid #000;
-    margin-top: 10px;
-    font-size: 11px;
+  display: inline-block;
+  padding: 7px 14px;
+  background: #efefef;
+  border: 2px solid #000;
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+#slide {
+  width: 100%;
+  text-align: center;
+}
+
+#slide img {
+  /* border: 10px solid; */
+  width: 800px;
+  height: 500px;
+}
+
+.slide {
+  display: none;
+  animation-name: slide;
+  animation-duration: 1.5s;
+}
+
+.active {
+  display: block;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
