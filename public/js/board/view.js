@@ -19,6 +19,9 @@ try {
   writer.innerHTML = row.writer
   content.innerHTML = row.content
 
+  // 수정 페이지 로더
+  document.querySelector("#modify").href = `./modify.html?id=${id}`
+
   // 삭제 버튼
   const deleteButton = document.querySelector("#delete")
   deleteButton.addEventListener("click", () => {
