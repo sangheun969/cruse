@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diary List</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Diary List</title>
+      <link rel="stylesheet" href="../public/css/list.css">
+      <script type="module" src="../public/js/board/list.js"></script>
   </head>
   <body>
-    <h1><a href="/"></a>LOGO</h1>
+    <h1><a href="/"></a>Diary</h1>
     <table class="board-table">
       <thead>
         <tr>
           <th>번호</th>
           <th>제목</th>
           <th>작성자</th>
-          <th><p class="clock"></p></th>
+          <th>작성일</th>
           <th>조회수</th>
         </tr>
       </thead>
-    </table>
+    </table>  
+    <a href="./write.html" class="btn">글쓰기</a>
   </body>
 </html>
