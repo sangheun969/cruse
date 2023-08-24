@@ -21,11 +21,12 @@ try {
   // 삭제 버튼
   const deleteButton = document.querySelector(".delete-button")
   deleteButton.addEventListener("click", () => {
+    const {id} = getParams()
     storage.delete(id)
     location.href = "./list.html"
   })
 
-} catch(e) {
+} catch (e) {
   alert(e.message)
   location.href = "./list.html"
 }

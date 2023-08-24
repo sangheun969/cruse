@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.modify-title {
+  padding: 18px 0;
+}
+
+.modify-write-form {
+  width: 500px;
+}
+
+form li {
+  display: flex;
+  flex-direction: column;
+}
+
+form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+li > span {
+  width: 50px;
+  position: relative;
+  top: 11px;
+  left: 10px;
+  background: #fff;
+}
+
+li > input {
+  padding: 10px 18px;
+  border: 1px solid #999;
+}
+
+li > textarea {
+  height: 500px;
+  padding: 20px;
+  border: 1px solid #999;
+  resize: none;
+}
