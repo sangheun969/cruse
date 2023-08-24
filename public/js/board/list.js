@@ -18,11 +18,6 @@ const component = list.map(createRow)
 const tbody = document.querySelector("tbody")
 tbody.innerHTML = component.join("")
 
-const components = list.map(createRow);
-
-const tbody = document.querySelector("tbody");
-tbody.innerHTML = components.join("");
-
 let slideIndex = 0;
 showSlides();
 
