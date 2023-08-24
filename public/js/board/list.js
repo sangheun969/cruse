@@ -1,9 +1,5 @@
-const today = new Date();
+import Storage from "../lib/storage.js"
 
-const year = today.getFullYear();
-const month = ("0" + (today.getMonth() + 1)).slice(-2);
-const day = ("0" + today.getDate()).slice(-2);
+const storage = new Storage()
+const list = storage.get()
 
-const dateString = year + "-" + month + "-" + day;
-
-document.querySelector(".clock").innerHTML = dateString;
