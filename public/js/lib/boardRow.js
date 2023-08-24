@@ -11,11 +11,9 @@ class BoardRow {
     this.title = row.title;
     this.content = row.content;
     this.writer = row.writer;
-    this.created_at = "2023-08-09";
+    this.created_at = row.createt_at;
     this.hit = 0;
   }
 }
-
-const clock = document.getElementById("clock");
 
 export default BoardRow;
