@@ -63,7 +63,7 @@ li > span:nth-child(2) {
 li:nth-child(3) > span {
   font-weight: bold;
   color: black;
-  width: 40px;
+  width: 50px;
 }
 
 li > p {
