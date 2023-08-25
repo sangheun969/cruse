@@ -18,13 +18,8 @@
    <img src="https://img.shields.io/badge/html-FF4500?style=for-the-badge&logo=git&logoColor=white">
    <img src="https://img.shields.io/badge/css-0000CD?style=for-the-badge&logo=git&logoColor=white">
 </div>
-   
-### 프로그램 화면 
----------------------------
-<img src="./public/img/login.png">
-<img src="./public/img/list.png">
-<img src="./public/img/write.png">
-<img src="./public/img/modify.png">
+
+---
 
 ## 2. 커밋 컨벤션
 
@@ -62,3 +57,21 @@
 | name |    박상현     |   전상민    |   이은재   |   정승교   |    김호현    |
 | :--: | :-----------: | :---------: | :--------: | :--------: | :----------: |
 | role | 팀 리더, MAIN | 팀원, WRITE | 팀원, VIEW | 팀원, LIST | 팀원, MODIFY |
+
+## 6. 프로그램 화면
+
+### login 화면
+
+<img src="./public/img/login.png">
+
+### list 화면
+
+<img src="./public/img/list.png">
+
+### write 화면
+
+<img src="./public/img/write.png">
+
+### modify 화면
+
+<img src="./public/img/modify.png">
