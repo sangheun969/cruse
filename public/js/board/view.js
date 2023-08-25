@@ -29,6 +29,6 @@ try {
   })
 
 } catch (e) {
-  alert(e.message)
+  console.log(e.message)
   location.href = "./list.html"
 }
