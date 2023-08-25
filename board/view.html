@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View</title>
+    <link rel="stylesheet" href="../public/css/view.css" />
+    <link
+      href="/public/img/icon.jpg.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <script type="module" src="../public/js/board/view.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>View</title>
-  <link rel="stylesheet" href="../public/css/view.css">
-  <script type="module" src="../public/js/board/view.js"></script>
-</head>
+  <body>
+    <h1><a href="/">View</a></h1>
 
-<body>
-
-  <h1><a href="/">View</a></h1>
-
-  <form action="./view.html?id=id" id="writeform">
-
-    <ul class="board-write-form">
-
+    <ul>
       <li>
         <span>제목: </span>
         <span id="title">ㅇ</span>
@@ -26,22 +26,18 @@
         <span>작성자: </span>
         <span id="writer">ㅇ</span>
       </li>
+      <li id="created-at">00:00</li>
 
       <li>
-        <span>내용</span>
+        <span>내용: </span>
         <p id="content">ㅇ</p>
       </li>
 
-      <li>
+      <li class="buttons">
         <button id="list"><a href="./list.html">목록</a></button>
         <button><a id="modify" href="./modify.html">수정</a></button>
-        <button id="delete"><span>삭제</span></button>
+        <button id="delete">삭제</button>
       </li>
-
     </ul>
-
-  </form>
-
-</body>
-
+  </body>
 </html>
