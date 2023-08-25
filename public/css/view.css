@@ -46,7 +46,7 @@ li:nth-child(2) {
 }
 
 li > span {
-  width: 140px;
+  width: 70px;
   position: relative;
   top: 11px;
   left: 10px;
@@ -54,6 +54,10 @@ li > span {
   font-size: 1.2rem;
   color: tomato;
   font-weight: bold;
+}
+
+li > span:nth-child(2) {
+  width:400px;
 }
 
 li:nth-child(3) > span {
