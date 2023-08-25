@@ -9,6 +9,12 @@ a {
   color: #333;
 }
 
+h1,
+h2 {
+  color: tomato;
+  text-align: center;
+}
+
 ul,
 li {
   list-style: none;
@@ -20,6 +26,15 @@ li {
 
 .modify-write-form {
   width: 500px;
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+form {
+  width: 32rem;
+  margin: auto;
 }
 
 form li {
@@ -43,12 +58,18 @@ li > span {
 
 li > input {
   padding: 10px 18px;
-  border: 1px solid #999;
+  border: 1px solid tomato;
+  border-radius: 1rem;
 }
 
 li > textarea {
   height: 500px;
   padding: 20px;
-  border: 1px solid #999;
+  border: 1px solid tomato;
   resize: none;
+  border-radius: 1rem;
+}
+
+.btn {
+  background-color: tomato;
 }
