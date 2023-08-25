@@ -6,13 +6,15 @@
 
 a {
   text-decoration: none;
-  color: #333;
+  color: tomato;
+  font-size: 3rem;
 }
 
 h1,
 h2 {
   color: tomato;
   text-align: center;
+  font-size: 2rem;
 }
 
 ul,
@@ -26,10 +28,6 @@ li {
 
 .modify-write-form {
   width: 500px;
-}
-
-.btn {
-  margin-top: 1rem;
 }
 
 form {
@@ -49,11 +47,16 @@ form ul {
 }
 
 li > span {
-  width: 50px;
+  /* width: 50px; */
+  width: 70px;
   position: relative;
   top: 11px;
-  left: 10px;
+  /* left: 10px; */
+  left: 20px;
   background: #fff;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: center;
 }
 
 li > input {
@@ -71,5 +74,6 @@ li > textarea {
 }
 
 .btn {
+  margin-top: 1rem;
   background-color: tomato;
 }
